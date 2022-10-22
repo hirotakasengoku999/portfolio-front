@@ -25,7 +25,7 @@ export default function Post({ staticPost, id }) {
     }
     return (
         <Layout title={post.title}>
-            <div className="container prose">
+            <div className="container prose m-1 p-5">
                 <p><u>{post.title}</u><br></br>{post.created_at}</p>
                 <div dangerouslySetInnerHTML={{ __html: `${marked(`${post.text}`)}` }} className="detail-content"></div>
                 <Link href="/blog-pages">

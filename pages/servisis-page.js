@@ -20,6 +20,7 @@ const Servisis = ({ staticServices }) => {
         <Layout title="service">
             {filteredServices && filteredServices.map((service) => <><a href={service.url} target="brank"><div className="max-w-lg rounded overflow-hidden shadow-lg">
                 <div className="px-6 py-4">
+                <img className="object-cover" src={service.img} />
                     <div className="font-bold text-xl text-gray-500 mb-2">
                         {service.title}
                     </div>
